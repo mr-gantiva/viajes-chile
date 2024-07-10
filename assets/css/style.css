@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar a {
+  color: #fff;
+}
+.navbar .icono img {
+  width: 30px;
+}
+
+.carousel {
+  height: 100vh;
+}
+.carousel img {
+  height: 100vh;
+  object-fit: cover;
+}/*# sourceMappingURL=style.css.map */

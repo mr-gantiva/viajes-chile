@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    a {
+        color: #fff;
+    }
+    .icono {
+        img {
+            width: 30px;
+        }
+    }
+}
+
+.carousel {
+    height: 100vh;
+    img {
+        height: 100vh;
+        object-fit: cover;
+    }
+}
