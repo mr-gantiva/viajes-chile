@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 /* Scrollbar */
 body::-webkit-scrollbar {
@@ -109,7 +110,14 @@ body::-webkit-scrollbar {
             margin: auto;
         }
     }
+    .carousel-item {
+        img {
+            animation: alejamiento 10s infinite alternate;
+        }
+    }
 }
+
+/* Fin Navbar y carousel */
 
 /* About */
 .about {
@@ -126,6 +134,9 @@ body::-webkit-scrollbar {
     }
 }
 
+/* Fin about */
+
+/* Destacados */
 .destacados {
     height: 100vh;
     .card {
@@ -177,6 +188,8 @@ body::-webkit-scrollbar {
         margin: auto;
     }
 }
+
+/* Fin destacados */
 
 .contacto {
     height: 100vh;
@@ -231,3 +244,17 @@ footer {
         transform: translate(306%, 720px) !important;
       }
 }
+
+/* Animaciones */
+
+@keyframes alejamiento {
+    0% {
+      transform: scale(1); /* Escala normal al inicio */
+    }
+    50% {
+      transform: scale(1.2); /* Escala al 120% a la mitad de la animación */
+    }
+    100% {
+      transform: scale(1); /* Vuelve a la escala normal al final */
+    }
+  }
