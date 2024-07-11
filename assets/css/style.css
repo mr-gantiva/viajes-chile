@@ -17,6 +17,10 @@
   color: #fff;
 }
 
+.card {
+  border: none;
+}
+
 .carousel {
   height: 100vh;
   position: relative;
@@ -57,9 +61,6 @@
   background-color: #111;
   color: #fff;
 }
-.about .card {
-  border: none;
-}
 .about .card :is(.card-header, .card-footer) {
   background-color: #0dcaf0;
 }
@@ -68,5 +69,20 @@
 }
 
 .destacados {
+  height: 100vh;
+}
+.destacados .card {
+  background-color: #0dcaf0;
+  color: #fff;
+}
+.destacados .card .card-header {
+  max-height: 200px;
+  overflow: hidden;
+}
+.destacados .card .card-title {
+  min-height: 50px;
+}
+
+.contanto {
   height: 100vh;
 }/*# sourceMappingURL=style.css.map */
