@@ -85,4 +85,19 @@
 
 .contanto {
   height: 100vh;
+}
+
+@media (300px <= width <= 768px) {
+  .arrow {
+    display: none;
+  }
+  .carousel {
+    height: auto;
+  }
+  .carousel .carousel-item img {
+    height: auto;
+  }
+  :is(.about, .destacados, .contacto) {
+    height: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
