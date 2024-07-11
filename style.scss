@@ -26,13 +26,19 @@ body::-webkit-scrollbar {
     overflow-y: scroll;
     scroll-behavior: smooth;
   }
+
+  .tooltip {
+    transform: translate(550%, 877px) !important;
+  }
 /* Header navbar y carrusel */
 .navbar {
+    transition: background-color 0.3s;
     a {
         color: #fff;
         &:hover {
             color: #0dcaf0;
         }
+        font-size: clamp(1rem, 2vw + 0.5rem, 1.2rem);
     }
     .menu-viajes {
         a {
@@ -47,6 +53,9 @@ body::-webkit-scrollbar {
             width: 30px;
         }
     }
+}
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8); /* Color de fondo deseado */
 }
 
 .bg-main {
@@ -203,4 +212,10 @@ footer {
     .about {
         display: none;
     }
+}
+
+@media (1024px <= width <= 1044px) {
+    .tooltip {
+        transform: translate(306%, 720px) !important;
+      }
 }
