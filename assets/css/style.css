@@ -8,6 +8,15 @@
 .navbar a {
   color: #fff;
 }
+.navbar a:hover {
+  color: #0dcaf0;
+}
+.navbar .menu-viajes a {
+  padding-bottom: 0;
+}
+.navbar .menu-viajes a:hover {
+  border-bottom: 1px solid #0dcaf0;
+}
 .navbar .icono img {
   width: 30px;
 }
