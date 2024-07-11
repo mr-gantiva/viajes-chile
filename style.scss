@@ -1,8 +1,31 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #111;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(13, 202, 240);
+    border-radius: 8px;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(6, 93, 110);
+  }
+  
+  body {
+    font-family: "Raleway", sans-serif;
+    background: var(--bg-body);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
 /* Header navbar y carrusel */
 .navbar {
     a {
@@ -107,6 +130,21 @@
             min-height: 50px;
         }
     }
+    .destacados-card {
+        &:hover {
+            .card {
+                opacity: 0.2;
+            }
+        }
+        .card {
+            transition: 0.5s;
+            overflow: hidden;
+            &:hover {
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+    }
 }
 
 :is(.about, .destacados){
@@ -159,7 +197,10 @@ footer {
             }
         }
     }
-    :is(.about, .destacados, .contacto) {
+    :is(.destacados, .contacto) {
         height: auto;
+    }
+    .about {
+        display: none;
     }
 }
