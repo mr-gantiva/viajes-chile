@@ -132,11 +132,19 @@ body::-webkit-scrollbar {
         background-color: #0dcaf0;
         color: #fff;
         .card-header {
+            position: relative;
             max-height: 200px;
             overflow: hidden;
         }
         .card-title {
             min-height: 50px;
+            h5 {
+                margin-bottom: 0;
+            }
+            img {
+                width: 20px;
+                height: 20px;
+            }
         }
     }
     .destacados-card {
@@ -155,6 +163,10 @@ body::-webkit-scrollbar {
         }
     }
 }
+.rotate-drop-down {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
 
 :is(.about, .destacados){
     .arrow-img {

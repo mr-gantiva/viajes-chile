@@ -126,11 +126,19 @@ body {
   color: #fff;
 }
 .destacados .card .card-header {
+  position: relative;
   max-height: 200px;
   overflow: hidden;
 }
 .destacados .card .card-title {
   min-height: 50px;
+}
+.destacados .card .card-title h5 {
+  margin-bottom: 0;
+}
+.destacados .card .card-title img {
+  width: 20px;
+  height: 20px;
 }
 .destacados .destacados-card:hover .card {
   opacity: 0.2;
@@ -142,6 +150,11 @@ body {
 .destacados .destacados-card .card:hover {
   opacity: 1;
   cursor: pointer;
+}
+
+.rotate-drop-down {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
 }
 
 :is(.about, .destacados) .arrow-img {
