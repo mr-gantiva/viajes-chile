@@ -14,6 +14,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* Tooltips */
 $(document).ready(function () {
+  /* Animación al scroll */
+  $("a").on("click", function (event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top,
+        },
+        200,
+        function () {
+          window.location.hash = hash;
+        }
+      );
+    }
+  });
   /* Tooltip botón Enviar correo*/
   $('[data-bs-toggle="tooltip"]').tooltip();
 
