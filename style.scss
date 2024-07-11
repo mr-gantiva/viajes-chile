@@ -24,6 +24,17 @@
     border: none;
 }
 
+.arrow {
+    position: relative;
+    .arrow-img {
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        border-radius: 50%;
+        z-index: 1001;
+    }
+}
+
 .carousel {
     height: 100vh;
     position: relative;
@@ -42,12 +53,11 @@
         object-fit: cover;
     }
     .arrow {
-        position: relative;
         img {
-            width: 50px;
-            height: 50px;
-            background: #fff;
-            border-radius: 50%;
+            // width: 50px;
+            // height: 50px;
+            // background: #fff;
+            // border-radius: 50%;
             position: absolute;
             top: -120px;
             bottom: 0;
@@ -88,8 +98,42 @@
     }
 }
 
-.contanto {
+:is(.about, .destacados){
+    .arrow-img {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+}
+
+.contacto {
     height: 100vh;
+}
+
+/* Footer */
+footer {
+    background-color: #0dcaf0;
+    h2 {
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    .box-redes {
+        ul{
+            list-style: none;
+            li {
+                transition: all 0.5s ease;
+                i {
+                    color: #fff;
+                    font-size: 1.25rem;
+                }
+                &:hover {
+                    transform: translateY(-10px);
+                }
+            }
+        }
+    }
 }
 @media (300px <= width <= 768px) {
 
