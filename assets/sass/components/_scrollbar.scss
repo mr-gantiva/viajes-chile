@@ -1,0 +1,24 @@
+@charset "UTF-8";
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #111;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(13, 202, 240);
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(6, 93, 110);
+}

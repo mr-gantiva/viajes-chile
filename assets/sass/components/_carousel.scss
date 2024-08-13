@@ -1,0 +1,68 @@
+.carousel {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.carousel {
+    max-height: 500px;
+    // min-height: 300px;
+    position: relative;
+}
+
+.carousel::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 1000;
+    background: linear-gradient(to top, #111, transparent);
+}
+
+.carousel img {
+    // height: 100vh;
+    object-fit: cover;
+}
+
+.carousel .arrow img {
+    position: absolute;
+    top: -120px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.carousel .carousel-item img {
+    animation: alejamiento 10s infinite alternate;
+}
+
+.carousel-indicators {
+    bottom: 5%;
+    @include respond-to(small) {
+        bottom: 0;
+    }
+}
+.carousel-caption {
+    bottom: 50%;
+    @include respond-to(small) {
+        bottom: 0;
+    }
+}
+.carousel-control-prev, .carousel-control-next {
+    z-index: 1001;
+}
+
+/* Animaciones */
+@keyframes alejamiento {
+    0% {
+      transform: scale(1); /* Escala normal al inicio */
+    }
+    50% {
+      transform: scale(1.2); /* Escala al 120% a la mitad de la animación */
+    }
+    100% {
+      transform: scale(1); /* Vuelve a la escala normal al final */
+    }
+  } 

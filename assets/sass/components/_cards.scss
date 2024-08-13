@@ -1,2 +1,46 @@
 @import '../abstracts/variables';
-@import '../abstracts/mixins';
+.card {
+    border: none;
+    overflow: hidden;
+}
+.card-body {
+    padding: 0;
+}
+.card-text {
+    color: $secondary-color;
+}
+.card__about {
+    max-height: 400px;
+    min-height: 400px;
+    background-color: $bg-main;
+    border-radius: 15px;
+}
+.card__destacados {
+    background-color: $secondary-color;
+    max-height: 300px;
+    min-height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card__imagen {
+    width: 400px;
+}
+.imagen__destacados {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card__text--destacados {
+    color: $bg-main;
+}
+.destacados .destacados-card:hover .card__destacados {
+    opacity: 0.2;
+  }
+  .destacados .destacados-card .card__destacados {
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  .destacados .destacados-card .card__destacados:hover {
+    opacity: 1;
+    cursor: pointer;
+  }

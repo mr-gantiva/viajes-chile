@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/* @charset "UTF-8";
 *,
 *:before,
 *:after {
@@ -6,10 +6,10 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-}
+} */
 
 /* Scrollbar */
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   width: 10px;
   background-color: #111;
 }
@@ -28,10 +28,10 @@ body {
   background: var(--bg-body);
   overflow-y: scroll;
   scroll-behavior: smooth;
-}
+} */
 
 /* Header navbar y carrusel */
-.navbar {
+/* .navbar {
   transition: background-color 0.3s;
 }
 .navbar a {
@@ -53,18 +53,18 @@ body {
 
 .navbar.scrolled {
   background-color: rgba(0, 0, 0, 0.8); /* Color de fondo deseado */
-}
+/*} */
 
-.bg-main {
+/* .bg-main {
   background-color: #111;
   color: #fff;
-}
+} */
 
-.card {
+/* .card {
   border: none;
-}
+} */
 
-.arrow {
+/* .arrow {
   position: relative;
 }
 .arrow .arrow-img {
@@ -73,9 +73,9 @@ body {
   background: #fff;
   border-radius: 50%;
   z-index: 1001;
-}
+} */
 
-.carousel {
+/* .carousel {
   height: 100vh;
   position: relative;
 }
@@ -103,7 +103,7 @@ body {
 }
 .carousel .carousel-item img {
   animation: alejamiento 10s infinite alternate;
-}
+} */
 
 /* Fin Navbar y carousel */
 /* About */
@@ -238,4 +238,4 @@ footer .box-redes ul li:hover {
   100% {
     transform: scale(1); /* Vuelve a la escala normal al final */
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

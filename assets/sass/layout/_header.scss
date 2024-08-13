@@ -1,1 +1,25 @@
-/* HEADER */
+/* Header navbar y carrusel */
+.navbar {
+  transition: background-color 0.3s;
+  border-radius: 20px 20px 0 0;
+}
+.navbar a {
+  color: #fff;
+  font-size: clamp(1rem, 2vw + 0.5rem, 1.2rem);
+}
+.navbar a:hover {
+  color: #0dcaf0;
+}
+.navbar .menu-viajes a {
+  padding-bottom: 0;
+}
+.navbar .menu-viajes a:hover {
+  border-bottom: 1px solid #0dcaf0;
+}
+.navbar .icono img {
+  width: 30px;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); /* Color de fondo deseado */
+}
