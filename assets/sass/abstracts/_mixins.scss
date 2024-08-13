@@ -1,0 +1,30 @@
+@mixin respond-to($breakpoint) {
+  @if $breakpoint ==small {
+    @media (300px <=width <=768px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint ==medium {
+    @media (769px <=width <=1024px) {
+      @content;
+    }
+  }
+}
+
+@mixin set-max-width($max-width) {
+  max-width: $max-width;
+}
+
+/* FORMULARIO */
+@mixin form-styles {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+@mixin set-margin($margin-top,$margin-bottom) {
+  margin-top: $margin-top;
+  margin-bottom: $margin-bottom;
+}
