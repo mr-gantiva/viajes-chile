@@ -1,0 +1,8 @@
+@import '../abstracts/variables';
+.btn__enviar {
+    background-color: $secondary-color;
+}
+.btn__enviar--hover:hover {
+    background-color: $bg-css-card;
+    color: $secondary-color;
+}

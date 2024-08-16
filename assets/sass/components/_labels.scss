@@ -1,0 +1,13 @@
+@import '../abstracts/variables';
+
+.form-label {
+    color: $secondary-color;
+}
+
+.check__link {
+    color: $secondary-color;
+    text-decoration: underline;
+}
+.check__link--hover:hover {
+    color: $bg-css-card;
+}

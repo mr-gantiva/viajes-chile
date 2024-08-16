@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/testimonios.css">
     <!-- Libreria AOS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <title>Viajes Chile</title>
@@ -115,14 +115,14 @@
         <section id="about" class="about bg-main d-none d-md-flex justify-content-center align-items-center">
             <div class="container">
                 <div class="row">
-                    <div class="col-12  py-5">
+                    <div class="col-12  py-5" data-aos="fade-down-right">
                         <h2 class="text-center">¿Quiénes somos?</h2>
                         <hr class="title__border">
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6" data-aos="fade-down-right">
                         <div class="card card__about mb-3">
                             <div class="card-body">
                                 <img src="./assets/img/quienes-somos.webp" alt="" class="w-100">
@@ -130,7 +130,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6" data-aos="fade-down-left">
                         <div class="card card__about mb-3">
                             <div class="card-body d-flex flex-column justify-content-center align-items-center px-3">
                                 <p class="card-text">Lorem ipsum dolor sit amet. consectetur adipiscing elit Donec
@@ -178,12 +178,13 @@
 
                 <div class="row destacados-card">
                     <div class="col-12 col-md-6 mb-3">
-                        <div class="card__destacados d-flex">
+                        <div class="card__destacados d-flex" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
                             <div class="card__imagen">
                                 <img src="./assets/img/card1.webp" class="card-img-top imagen__destacados" alt="...">
                             </div>
 
-                            <div class="card__info d-flex flex-column justify-content-center px-5">
+                            <div class="card__info d-flex flex-column justify-content-center">
                                 <h3 class="card__title">Región de los lagos</h3>
                                 <p class="card-text card__text--destacados">Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Saepe corporis quidem
@@ -198,12 +199,13 @@
                     </div>
 
                     <div class="col-12 col-md-6 mb-3">
-                        <div class="card__destacados d-flex">
+                        <div class="card__destacados d-flex" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
                             <div class="card__imagen">
                                 <img src="./assets/img/card2.webp" class="card-img-top imagen__destacados" alt="...">
                             </div>
 
-                            <div class="card__info d-flex flex-column justify-content-center px-5">
+                            <div class="card__info d-flex flex-column justify-content-center">
                                 <h3 class="card__title">Desierto de Atacama</h3>
                                 <p class="card-text card__text--destacados">Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Saepe corporis quidem
@@ -218,12 +220,13 @@
                     </div>
 
                     <div class="col-12 col-md-6 mb-3">
-                        <div class="card__destacados d-flex">
+                        <div class="card__destacados d-flex" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
                             <div class="card__imagen">
                                 <img src="./assets/img/card3.webp" class="card-img-top imagen__destacados" alt="...">
                             </div>
 
-                            <div class="card__info d-flex flex-column justify-content-center px-5">
+                            <div class="card__info d-flex flex-column justify-content-center">
                                 <h3 class="card__title">Norte grande de Chile</h3>
                                 <p class="card-text card__text--destacados">Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Saepe corporis quidem
@@ -239,12 +242,13 @@
 
 
                     <div class="col-12 col-md-6 mb-3">
-                        <div class="card__destacados d-flex">
+                        <div class="card__destacados d-flex" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
                             <div class="card__imagen">
                                 <img src="./assets/img/card4.webp" class="card-img-top imagen__destacados" alt="...">
                             </div>
 
-                            <div class="card__info d-flex flex-column justify-content-center px-5">
+                            <div class="card__info d-flex flex-column justify-content-center">
                                 <h3 class="card__title">Bosque mágico</h3>
                                 <p class="card-text card__text--destacados">Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Saepe corporis quidem
@@ -271,35 +275,35 @@
 
         <!-- TESTIMONIOS -->
         <section class="testimonios">
-            <div class="testimonios__title">
+            <div class="testimonios__title" data-aos="fade-up">
                 <h2>Testimonios</h2>
                 <hr class="title__border">
             </div>
 
             <div class="testimonios__content">
-                <div class="testimonios__box">
+                <div class="testimonios__box" data-aos="flip-up">
                     <p class="textimonios__text">Lorem ipsum dolor sit amet
                         consectetur adipisicing elit- Quam
                         omnis quisquam voluptas sit
                         provident culpa hic vitae, sunt
                         eligendi rem
                     </p>
-                    <img class="testimonios__image" src="./assets/img/testimonio1.webp" alt="">
+                    <img class="testimonios__image" data-aos="flip-up" src="./assets/img/testimonio1.webp" alt="">
                     <h3 class="testimonios__name">Mariela</h3>
                 </div>
 
-                <div class="testimonios__box">
+                <div class="testimonios__box" data-aos="flip-up">
                     <p class="textimonios__text">Lorem ipsum dolor sit amet
                         consectetur adipisicing elit- Quam
                         omnis quisquam voluptas sit
                         provident culpa hic vitae, sunt
                         eligendi rem
                     </p>
-                    <img class="testimonios__image" src="./assets/img/testimonio2.webp" alt="">
+                    <img class="testimonios__image" data-aos="flip-up" src="./assets/img/testimonio2.webp" alt="">
                     <h3 class="testimonios__name">Christian</h3>
                 </div>
 
-                <div class="testimonios__box">
+                <div class="testimonios__box" data-aos="flip-up">
                     <p class="textimonios__text">Lorem ipsum dolor sit amet
                         consectetur adipisicing elit- Quam
                         omnis quisquam voluptas sit
@@ -314,36 +318,82 @@
 
         <!-- CONTACTO -->
 
-        <section id="contacto" class="contacto bg-main d-flex justify-content-center align-items-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12  py-5">
-                        <h2 class="text-uppercase text-center">contacto</h2>
-                        <hr class="title__border">
-                    </div>
+        <section class="container section__info">
+            <div class="row py-5" id="contacto">
+                <div class="col-12 titulo" data-aos="fade-up">
+                    <h2 class="text-center">Contacto</h2>
+                    <hr class="title__border">
                 </div>
-                <form class="row g-3">
-                    <div class="col-12 col-md-8 offset-md-2">
-                        <label for="inputNombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="inputNombre" required>
-                    </div>
-                    <div class="col-12 col-md-8 offset-md-2">
-                        <label for="inputAsunto" class="form-label">Asunto</label>
-                        <input type="text" class="form-control" id="inputAsunto" required>
-                    </div>
-                    <div class="col-12 col-md-8 offset-md-2">
-                        <label for="floatingTextarea2" class="form-label">Mensaje</label>
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                            style="height: 100px"></textarea>
-                    </div>
+            </div>
 
-                    <div class="col-12 col-md-8 offset-md-2 pb-5">
-                        <button type="submit" class="btn disabled" id="submitBtn">Enviar</button>
-                        <i class="fa-solid fa-circle-exclamation" data-bs-toggle="tooltip" data-bs-placement="top"
-                            title="Rellena todos los campos para continuar" id="faltaInfoFormulario"></i>
-
-                    </div>
-                </form>
+            <div class="row">
+                <div class="col-12 col-md-6 pb-5" data-aos="fade-left">
+                    <form class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <label for="inputNombre" class="form-label pe-2">Nombre</label><i
+                                class="fa-solid fa-circle-info tooltip__icon" data-bs-toggle="tooltip"
+                                data-bs-placement="right" data-bs-custom-class="custom-tooltip"
+                                data-bs-title="Escribe tu nombre completo"></i>
+                            <input type="text" class="form-control" id="inputName" placeholder="Nombre" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="inputEmail" class="form-label pe-2">Correo electrónico</label><i
+                                class="fa-solid fa-circle-info tooltip__icon" data-bs-toggle="tooltip"
+                                data-bs-placement="right" data-bs-custom-class="custom-tooltip"
+                                data-bs-title="Ejemplo: usuario@correo.com"></i>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Tu Email" required>
+                        </div>
+                        <div class="col-12">
+                            <div class="form">
+                                <label for="inputMessage" class="form-label pe-2">Mensaje</label><i
+                                    class="fa-solid fa-circle-info tooltip__icon" data-bs-toggle="tooltip"
+                                    data-bs-placement="right" data-bs-custom-class="custom-tooltip"
+                                    data-bs-title="Ingresa tus comentarios aquí."></i>
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Escribe tu mensaje</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    <a class="check__link check__link--hover" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">Acepto lo términos y
+                                        condiciones</a>
+                                    <i class="fa-solid fa-circle-info tooltip__icon" data-bs-toggle="tooltip"
+                                        data-bs-placement="right" data-bs-custom-class="custom-tooltip"
+                                        data-bs-title="Ingresa tus comentarios aquí."></i>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-grid col-12 col-md-3">
+                                <button type="submit" class="btn btn__enviar btn__enviar--hover">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-6 pb-5 info__contacto d-flex align-items-center" data-aos="fade-right">
+                    <ul>
+                        <li class="d-flex align-items-center gap-3 pb-3"><i
+                                class="fa-solid fa-phone item__contacto"></i>
+                            <p class="text__contacto">+56999887766</p>
+                        </li>
+                        <li class="d-flex align-items-center gap-3 pb-3"><i
+                                class="fa-solid fa-envelope item__contacto"></i>
+                            <p class="text__contacto">contacto@viajeschile.com</p>
+                        </li>
+                        <li class="d-flex align-items-center gap-3 pb-3"><i
+                                class="fa-brands fa-linkedin item__contacto"></i>
+                            <p class="text__contacto">ViajesChile</p>
+                        </li>
+                        <li class="d-flex align-items-center gap-3 pb-3"><i
+                                class="fa-brands fa-instagram item__contacto"></i>
+                            <p class="text__contacto">viajes_chile</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
@@ -352,7 +402,7 @@
         <div class="container py-5">
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-12 col-md-6 text-center">
-                    <h2 class="text-uppercase">viaje chile</h2>
+                    <h2>Viaje Chile</h2>
                 </div>
 
                 <div class="col-12 col-md-6 box-redes">
@@ -368,13 +418,39 @@
     </footer>
 
 
-    <script src="./assets/js/script.js"></script>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Terminos y condiciones</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda illo excepturi nemo
+                        consequatur reiciendis quod quam rem nam sint maxime aliquid animi suscipit quaerat nobis,
+                        doloremque dolorum? Doloremque, saepe provident?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS-->
     <script src="./assets/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!-- Jquery JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Fontawesome JS-->
     <script src="https://kit.fontawesome.com/d2e407d1e0.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- AOS JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Script general JS-->
     <script src="./assets/js/script.js"></script>
 </body>
 

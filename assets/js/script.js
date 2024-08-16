@@ -1,3 +1,5 @@
+/* Inicializar AOS */
+AOS.init();
 /* Cambiar el color del navbar al hacer scroll */
 document.addEventListener("DOMContentLoaded", function () {
   var navbar = document.querySelector(".navbar");

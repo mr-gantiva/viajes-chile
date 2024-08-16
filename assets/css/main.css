@@ -86,6 +86,7 @@ h2 {
 
 p {
   font-size: clamp(0.75rem, 2vw, 1rem);
+  margin-bottom: 0;
 }
 
 h3 {
@@ -93,7 +94,7 @@ h3 {
 }
 
 h2 {
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1.5rem, 3vw + 1rem, 2.813rem);
 }
 
 .title__border {
@@ -170,6 +171,15 @@ h2 {
 .testimonios__name {
   color: #ffffff;
   padding: 10px 0;
+}
+
+.item__contacto {
+  color: #ffffff;
+}
+
+.text__contacto {
+  color: #ffffff;
+  margin-bottom: 0;
 }
 
 .carousel {
@@ -276,6 +286,15 @@ h2 {
   width: 400px;
 }
 
+.card__info {
+  padding: 0 3rem;
+}
+@media (300px <= width <= 768px) {
+  .card__info {
+    padding: 0 1rem;
+  }
+}
+
 .imagen__destacados {
   width: 100%;
   height: 100%;
@@ -300,6 +319,12 @@ h2 {
   cursor: pointer;
 }
 
+.card__price {
+  background-color: #cdcdcd;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
 .arrow {
   position: relative;
 }
@@ -310,6 +335,32 @@ h2 {
   background: #fff;
   border-radius: 50%;
   z-index: 1001;
+}
+
+.form-label {
+  color: #ffffff;
+}
+
+.check__link {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.check__link--hover:hover {
+  color: #299ed5;
+}
+
+.tooltip__icon {
+  color: #ffffff;
+}
+
+.btn__enviar {
+  background-color: #ffffff;
+}
+
+.btn__enviar--hover:hover {
+  background-color: #299ed5;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */

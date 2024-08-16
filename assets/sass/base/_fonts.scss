@@ -29,6 +29,7 @@
 
 p {
   font-size: clamp(0.75rem, 2vw, 1rem);
+  margin-bottom: 0;
 }
 
 h3 {
@@ -36,7 +37,7 @@ h3 {
 }
 
 h2 {
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1.5rem, 3vw + 1rem, 2.813rem);
 }
 .title__border {
   border: 1px solid $secondary-color;
